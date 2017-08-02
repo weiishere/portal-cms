@@ -1,0 +1,11 @@
+// 设置半透明遮罩
+
+@mixin masker ($position){
+  position: $position;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.3);
+  background: url("../images/opacity_3.png")\9;
+}

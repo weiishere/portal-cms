@@ -1,0 +1,179 @@
+/**
+ * 产品介绍
+ */
+//变量
+@import "core/variables";
+//函数
+@import "core/mixins";
+//重置样式
+@import "core/reset";
+//字体
+@import "core/font";
+
+@import "core/components/animation";
+
+//各模块样式
+@import "modules/layout";
+@import "modules/header";
+@import "modules/backTop";
+@import "modules/counsel";
+@import "modules/footer";
+
+
+body{
+    background: #fff;
+}
+/* 清除浮动*/
+.clear {
+    clear:both;
+    }
+.clearfix {
+    zoom:1;/*触发IE6/7的layer*/
+    }
+.clearfix:after {
+    content:"";
+    display:block;
+    clear:both;
+    }
+
+.about-banner{
+    border-top:1px solid transparent;
+    height: 500px;
+    background: url('../img/about-banner.jpg') no-repeat center center;
+    color: #fff;
+    font-size: 14px;
+    h1{
+    font-size: 48px;
+    margin-top: 200px;
+
+    }
+    p.sub_desc{
+    font-size: 18px;
+    margin: 10px auto 25px;
+    width: 600px;
+    }
+
+    .open-btn{
+    display: block;
+    margin:30px auto;
+    width: 130px;
+    height: 30px;
+    line-height: 32px;
+    background: #e4bd55;
+    text-align: center;
+    color:#222222;
+    }
+
+}
+
+section{
+    text-align: center;
+    width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+    h1{
+        font-size: 36px;
+        font-weight: bold;
+        line-height: 2em;
+        margin: 14px 0;
+    }
+}
+
+.left{
+    text-align: left;
+}
+.about-text{
+    padding: 10px 0 0 0;
+    h2{
+        font-size: 18px;
+        line-height: 1.5;
+        color: #666;
+        font-weight: normal;
+    }
+    >p{
+        text-align: left;
+        text-indent: 2em;
+    }
+    p{
+        font-size: 18px;
+        line-height: 2em;
+        color: #666;
+        font-weight: normal;
+    }
+}
+.about-illustration{
+    padding-bottom: 50px;
+    .icon-single{
+        width: 33%;
+        height: auto;
+        float: left;
+        text-align: center;
+        padding-top: 80px;
+        i{
+            display: block;
+            width: 120px;
+            height: 120px;
+            margin: 0 auto;
+            background-image: url(../img/about-icons.png);
+            background-repeat: no-repeat;
+        }
+    }
+
+}
+.establish i{
+    background-position: 0 0;
+}
+.loction i{
+    background-position: 0 -120px;
+}
+.define i{
+    background-position: 0 -240px
+}
+.platform i{
+    background-position: 0 -360px;
+}
+
+.about-culture{
+    .center{
+        margin: 0 75px;
+    }
+    .about-culture-images{
+        float: left;
+        position: relative;
+        text-align: center;
+        >img{
+            width: 350px;
+            height: 180px;
+        }
+        .about-culture-text{
+            width: 100%;
+            position: absolute;
+            left: 0;
+            top: 45px;
+            color: #fff;
+            h1{
+                font-size: 36px;
+                line-height: 2em;
+                font-weight: normal;
+                margin: 0;
+            }
+            p{
+                font-size: 18px;
+                line-height: 1em;
+                -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0.6)";
+                filter: alpha(opacity=0.6);
+                filter: alpha(opacity=0.6);
+                opacity: 0.6;
+            }
+        }
+    }
+}
+
+.about-address p{
+    margin: 20px 0;
+}
+
+// @add by lizhiyang1
+.footer-hd{
+    display: block !important;
+}

@@ -1,0 +1,169 @@
+/* header */
+
+.user-bar{
+  height: 30px;
+  background: rgba(0, 0, 0, 0.3);
+  background: url("../img/opacity-3.png")\9;
+  line-height: 30px;
+  text-align: right;
+  font-size: 12px;
+  color: #fff;
+
+  a {
+    display: inline-block;
+    padding: 0 0 0 20px;
+    text-decoration: none;
+    color: #fff;
+  }
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.2);
+  background: url("../img/opacity-2.png")\9;
+  line-height: 100px;
+  font-size: 18px;
+  color: #fff;
+  z-index: 9;
+  transition: background 1s;
+  //overflow-x: scroll;
+  //-webkit-overflow-scrolling: touch;
+
+  &.fixed{
+    background: rgba(0, 0, 0, 0.7);
+    background: url("../img/opacity-7.png")\9;
+
+    .sub-nav{
+      background: rgba(0, 0, 0, 0.7) !important;
+      background: url("../img/opacity-7.png") !important\9 ;
+    }
+
+  }
+}
+
+.logo {
+  display: inline-block;
+  float: left;
+  height: 100px;
+  overflow: hidden;
+}
+
+.nav {
+  float: right;
+
+  > ul {
+    @include clearfix();
+
+    > li {
+      float: left;
+      margin-left: 40px;
+
+      > a{
+        display: block;
+        position: relative;
+        padding: 0 5px;
+      }
+
+      &.dropdown{
+        > .sub-nav {
+          display: none;
+          position: absolute;
+          top: 130px;
+          left: 0;
+          right: 0;
+          background: rgba(0, 0, 0, 0.2);
+          background: url("../img/opacity-2.png")\9;
+          animation: easeIn 0.3s ease-in;
+          //opacity: 0;
+          //transform: translateY(-400px);
+          //transition: transform 0.2s, opacity 0.3s;
+          z-index: 8;
+
+          li{
+            float: left;
+            width: 20%;
+
+            a{
+              display: block;
+              position: relative;
+              padding: 10px 0 40px 0;
+              font-size: 16px;
+              text-align: center;
+              line-height: 22px;
+
+              &:before{
+                display: block;
+                margin-bottom: 15px;
+                line-height: 42px;
+                font-size: 42px;
+              }
+            }
+
+          }
+
+        }
+
+        > a {
+          @include iconafter('\e606');
+        }
+      }
+
+      &:hover{
+        &.dropdown{
+
+          > .sub-nav {
+            display: block;
+            //opacity: 1;
+            //transform: translateY(0px);
+            //transition: display 0.5s, transform 0.5s, opacity 0.5s;
+
+            a:hover{
+              background: rgba(0, 0, 0, 0.2);
+              background: url("../img/opacity-2.png")\9;
+            }
+          }
+
+          > a {
+            @include iconafter('\e605');
+          }
+        }
+
+        > a{
+          background: rgba(0, 0, 0, 0.2);
+          background: url("../img/opacity-2.png")\9;
+        }
+      }
+
+      &.active{
+        > a{
+          background: none;
+
+          &:before{
+            position: absolute;
+            right: 5px;
+            bottom: 30px;
+            left:5px;
+            height: 1px;
+            background: $white;
+            content: '';
+          }
+        }
+      }
+    }
+  }
+}
+
+.page-banner {
+  height: 500px;
+  background: #181818;
+}
+
+@media screen and (max-width: 1000px) {
+  .header {
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
+  }
+}

@@ -1,0 +1,152 @@
+.main {
+  padding: 30px 0;
+  background: #f5f5f5;
+
+  .container {
+    background: #fff;
+  }
+}
+
+.slide-nav {
+  float: left;
+  width: 240px;
+  font-size: 16px;
+
+  &.fixed {
+    position: fixed;
+    top: 100px;
+    bottom: 0;
+    overflow: scroll\9;
+  }
+
+  li {
+
+    &.sub-nav {
+      > a {
+        padding: 0 10px 0 25px;
+        font-weight: 400;
+      }
+    }
+
+    > a {
+      display: block;
+      padding: 0 10px 0 20px;
+      height: 50px;
+      line-height: 50px;
+      font-weight: 700;
+      @include border-bottom(#eee);
+      @include iconafter('\e608');
+
+      &:after {
+        float: right;
+        margin-right: 10px\9;
+      }
+
+      &:hover {
+        background: #fafafa;
+      }
+    }
+  }
+
+  .download-btn {
+    display: block;
+    height: 80px;
+    @include border-bottom(#eee);
+    text-align: center;
+    line-height: 80px;
+    color: #2588e4;
+
+    @include iconbefore('\e607');
+    &:before {
+      font-size: 22px;
+      line-height: 80px;
+    }
+
+    &:hover {
+      background: #fafafa;
+      font-weight: 700;
+    }
+  }
+}
+
+.document-wrap {
+  margin-left: 240px;
+  padding: 0 50px 50px 50px;
+  @include border-left(#eee);
+
+  h2 {
+    margin-bottom: 30px;
+    padding-top: 100px;
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  .table-title {
+    margin: 25px 0 10px 0;
+  }
+
+  table {
+    border-collapse: collapse;
+    border-spacing: 1px;
+    width: 80%;
+
+    tr {
+      width: 100%;
+      @include border(#000);
+      text-align: left;
+    }
+
+    th {
+      padding: 0 5px;
+      background: #eee;
+      @include border(#000);
+    }
+
+    td {
+      padding: 0 5px;
+      @include border(#000);
+    }
+  }
+
+  .download-btn {
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    height: 50px;
+    @include border(#2588e4);
+    text-align: center;
+    line-height: 50px;
+    color: #2588e4;
+
+    @include iconbefore('\e607');
+    &:before {
+      font-size: 22px;
+      line-height: 50px;
+    }
+
+    &:hover {
+      background: #fafafa;
+      font-weight: 700;
+    }
+  }
+}
+
+@media screen and (max-width: 1440px) {
+
+  .slide-nav {
+
+    &.fixed {
+      overflow-x: hidden;
+      overflow-y: scroll;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    li {
+      > a {
+        &:after {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}

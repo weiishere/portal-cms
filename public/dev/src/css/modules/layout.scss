@@ -1,0 +1,22 @@
+body{
+    max-width: 1920px;
+    margin: 0 auto;
+}
+.float-l{
+    float: left;
+}
+.float-r{
+    float: right;
+}
+
+.container{
+    margin: 0 auto;
+    width: 1000px;
+    @include clearfix();
+}
+
+@media screen and (min-width: 1279px) {
+    .container{
+        width: 1200px;
+    }
+}

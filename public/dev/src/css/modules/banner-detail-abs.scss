@@ -1,0 +1,230 @@
+.clearfix {
+  &:before {
+    display: table;
+    content: '';
+  }
+  &:after {
+    display: table;
+    content: '';
+    clear: both;
+  }
+}
+
+.banner {
+  height: 560px;
+  overflow: hidden;
+  img {
+    width:auto;
+    margin: 0 auto;
+    height: 100%;
+  }
+  .swiper-slide {
+    float: left;
+    width: 100%;
+    height: 560px;
+    background-repeat: no-repeat;
+    .title {
+      margin: 240px 0 10px 0;
+      text-align: center;
+      font-size: 48px;
+      font-weight: 400;
+      color: #fff;
+    }
+    .desc {
+      margin-bottom: 70px;
+      text-align: center;
+      font-size: 28px;
+      font-weight: 400;
+      color: #e4bd55;
+    }
+  }
+  .contact-btn, .pagination, .prev, .next {
+    display: none;
+  }
+}
+
+.section {
+  background: #fff;
+  padding-bottom: 40px;
+}
+
+.content {
+  > {
+    .about-ABSplat {
+      font-weight: 500;
+      font-size: 36px;
+      color: #555;
+      position: relative;
+      margin-bottom: 80px;
+      line-height: 60px;
+    }
+    .about-howto {
+      font-weight: 500;
+      font-size: 36px;
+      color: #555;
+      position: relative;
+      margin-bottom: 80px;
+      line-height: 60px;
+      color: #fff;
+      margin-top: 90px;
+      margin-bottom: 130px;
+    }
+    .explaination {
+      text-align: center;
+      margin-top: 80px;
+      width: 1200px;
+      margin: 0 auto;
+      > {
+        .ex-item {
+          float: left;
+          width: 300px;
+          height: 510px;
+          padding: 0 40px;
+          -webkit-box-shadow: 0px 0px 10px 0px #9ba2ad;
+          -moz-box-shadow: 0px 0px 10px 0px #9ba2ad;
+          box-shadow: 0px 0px 10px 0px #9ba2ad;
+          border-radius: 10px;
+          > {
+            h2 {
+              color: #fff;
+              margin-top: 55px;
+            }
+            p {
+              font-size: 18px;
+              margin-top: 120px;
+              text-align: left;
+              line-height: 32px;
+            }
+          }
+        }
+        .ex-left {
+          background: url('http://img11.360buyimg.com/wympay/jfs/t3184/212/4452210298/3274/5d0a4586/584781d9N9ffc4aa7.png') no-repeat;
+        }
+        .ex-center {
+          background: url('http://img10.360buyimg.com/wympay/jfs/t3940/76/284037785/3188/ea234863/584781e6N08b3e8bb.png') no-repeat;
+          margin-left: 30px;
+          > p > span {
+            display: block;
+            position: relative;
+            text-indent: 1em;
+            &:before {
+              content: '* ';
+              position: absolute;
+              top: 5px;
+              left: -13px;
+            }
+          }
+        }
+        .ex-right {
+          background: url('http://img10.360buyimg.com/wympay/jfs/t3148/75/4404610218/3435/b2de6093/584781f0N0b9b4294.png') no-repeat;
+          margin-left: 30px;
+        }
+      }
+    }
+    .about-ABSplat > .about-num, .about-howto > .about-num {
+      display: inline-block;
+      vertical-align: text-bottom;
+      width:auto;
+      margin-right: 5px;
+    }
+    .about-ABSplat {
+      &:before {
+        content: '';
+        position: absolute;
+        width: 10%;
+        left: 21%;
+        bottom: 46.5%;
+        border-bottom: 1px solid #4cb0d5;
+      }
+      &:after {
+        content: '';
+        position: absolute;
+        width: 10%;
+        left: 69%;
+        bottom: 46.5%;
+        border-bottom: 1px solid #4cb0d5; 
+      }
+    }
+    .about-howto {
+      &:before {
+        content: '';
+        position: absolute;
+        width: 10%;
+        left: 28%;
+        bottom: 46.5%;
+        border-bottom: 1px solid #fff;
+      }
+      &:after {
+        content: '';
+        position: absolute;
+        width: 10%;
+        left: 62%;
+        bottom: 46.5%;
+        border-bottom: 1px solid #fff;
+      }
+    }
+    h2 {
+      margin: 60px 0 30px 0;
+      font-size: 30px;
+      text-align: center;
+      font-weight: 500;
+      color: #222;
+    }
+    p {
+      font-size: 18px;
+      color: #666;
+    }
+  }
+  .indent {
+    text-indent: 2em;
+  }
+  .text-center {
+    text-align: center;
+  }
+  .step-con {
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    > .step-item {
+      display: inline-block;
+      position: relative;
+      width: 200px;
+      height: 140px;
+      text-align: center;
+      img{
+        width:auto;
+      }
+      &:not(:last-child) :after {
+        content: '';
+        width: 15px;
+        height: 25px;
+        background: url('http://img14.360buyimg.com/wympay/jfs/t3280/3/4280702517/1087/cb827416/58478203Nc089cc4e.png') no-repeat;
+        text-align: center;
+        color: #888;
+        position: absolute;
+        top: 15%;
+        right: 0%;
+      }
+      >.step-title {
+        color: #fff;
+        font-size: 18px;
+        margin-top: 37px;
+      }
+      .step-text {
+        color: #fff;
+        font-size: 14px;
+        font-weight: 100;
+        margin-top: 20px;
+        > a {
+          color: #fff;
+          font-size: 14px;
+          font-weight: 100;
+          margin-top: 20px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+/*# sourceMappingURL=banner-detail.css.map */

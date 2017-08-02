@@ -1,0 +1,21 @@
+//变量
+@import "core/variables";
+//函数
+@import "core/mixins";
+//重置样式
+@import "core/reset";
+//字体
+@import "core/font";
+//组件
+@import "core/components/idangerous.swiper";
+@import "core/components/animation";
+
+//各模块样式
+@import "modules/layout";
+@import "modules/header";
+@import "modules/banner";
+@import "modules/backTop";
+@import "modules/counsel";
+@import "modules/footer";
+@import "modules/counsel";
+@import "modules/fileforyp";

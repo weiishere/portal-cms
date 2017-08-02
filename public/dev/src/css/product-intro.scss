@@ -1,0 +1,242 @@
+/**
+ * 产品介绍
+ */
+//变量
+@import "core/variables";
+//函数
+@import "core/mixins";
+//重置样式
+@import "core/reset";
+//字体
+@import "core/font";
+
+@import "core/components/animation";
+
+//各模块样式
+@import "modules/layout";
+@import "modules/header";
+@import "modules/backTop";
+@import "modules/footer";
+@import "modules/counsel";
+
+h1,h2, h3{
+  font-weight: normal;
+}
+body{
+  overflow-x:hidden;
+  background: #fff;
+}
+.content-1200{
+  width: 1200px;
+  margin: 0 auto;
+}
+.text-center{
+  text-align: center;
+}
+// product-intro-banner
+.product-intro-banner{
+  border-top:1px solid transparent;
+  height: 500px;
+  background: url('../img/product-intro-banner.jpg') no-repeat center center;
+  color: #fff;
+  font-size: 14px;
+  h1{
+    font-size: 48px;
+    margin-top: 200px;
+
+  }
+  p.sub_desc{
+    font-size: 18px;
+    margin: 10px auto 25px;
+    width: 600px;
+  }
+
+  .open-btn{
+    display: block;
+    margin:30px auto;
+    width: 130px;
+    height: 30px;
+    line-height: 32px;
+    background: #e4bd55;
+    text-align: center;
+    color:#222222;
+  }
+
+}
+
+/* 内容Tab切换 */
+
+
+/* 清除浮动*/
+.clear {
+    clear:both;
+    }
+.clearfix {
+    zoom:1;/*触发IE6/7的layer*/
+    }
+.clearfix:after {
+    content:"";
+    display:block;
+    clear:both;
+    }
+
+#product-intro-tabs {
+    background: #fff;
+    ul{
+        width: 1200px;
+        margin: 0 auto;
+        li {
+        	float: left;
+        	margin-right: 2px;
+            a {
+                width: auto;
+            	display: block;
+            	padding: 20px 30px;
+            	background: #fff;
+            	text-decoration: none;
+            	color: #333;
+            }
+            a:hover {
+                color: #f1be36
+            }
+            a:active,a:focus {
+            	outline: expression(hideFocus='true');
+                color: #f1be36;
+            }
+            .tabulous_active {
+            	background: white !important;
+                color: #f1be36!important;
+            }
+        }
+    }
+}
+.lazy{width:390px;height:220px;}
+#product-intro-tabs-con {
+	overflow: hidden;
+	background: #f5f5f5;
+    position: relative;
+    padding-bottom: 50px;
+    div {
+        width: 1218px;
+        margin: 0 auto;
+        section{
+            float: left;
+            margin: 15px 8px 0 8px;
+            position: relative;
+            text-align: center;
+            >img{
+                width: 390px;
+                height: 220px;
+            }
+            .product-intro-tabs-text{
+                width: 100%;
+                position: absolute;
+                left: 0;
+                top: 71px;
+                color: #fff;
+                h1{
+                    font-size: 30px;
+                    line-height: 2em;
+                }
+                p{
+                    font-size: 18px;
+                    line-height: 1em;
+                    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0.6)";
+                    filter: alpha(opacity=0.6);
+                    filter: alpha(opacity=0.6);
+                    opacity: 0.6;
+                }
+            }
+            .product-intro-tabs-start{
+                text-align: center;
+                background: #fff;
+                padding-bottom: 14px;
+                span{
+                    display: inline-block;
+                    font-size: 15px;
+                    width: 15px;
+                    height: 15px;
+                    margin: 22px 0 12px;
+                }
+                span.gray {
+                    color: #ddd;
+                }
+                span.yellow{
+                    color: #ffce4b;
+                }
+                a{
+                    display: inline-block;
+                    width: 80px;
+                    height: 25px;
+                    // box-sizing: border-box;
+                    border: 1px solid #d6d6d6;
+                    color: #666;
+                    font-size: 14px;
+                    line-height: 25px;
+                }
+            }
+
+        }
+    }
+
+}
+
+.transition {
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	-ms-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+
+	-webkit-transition-delay: .3s;
+	-moz-transition-delay: .3s;
+	-o-transition-delay: .3s;
+	-ms-transition-delay: .3s;
+	transition-delay: .3s;
+}
+
+.make_transist {
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	-ms-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}
+
+.hidescale {
+	-webkit-transform: scale(0.9);
+	-moz-transform: scale(0.9);
+	-o-transform: scale(0.9);
+	-ms-transform: scale(0.9);
+	transform: scale(0.9);
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+	filter: alpha(opacity=0);
+	opacity: 0;
+    display: none;
+}
+
+.showscale {
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-o-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: alpha(opacity=100);
+	opacity: 1;
+    display: block;
+
+	-webkit-transition-delay: .3s;
+	-moz-transition-delay: .3s;
+	-o-transition-delay: .3s;
+	-ms-transition-delay: .3s;
+	transition-delay: .3s;
+}
+.tabulousclear {
+    display: block;
+    clear: both;
+}
+#alttext-container{
+    border: none!important;
+}

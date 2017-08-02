@@ -1,0 +1,171 @@
+ <header class="header" style="padding-top: 30px;">
+    <script src='http://static.jdpay.com/basic/dist/js/m-public/??jquery1.7.2.js'></script>
+    <iframe src="//ft.jdpay.com/account/statusbar/" style="position:absolute; top: 0; left: 0; right: 0; background-color:transparent; margin: 0; padding: 0" width="100%" height="30px" frameborder="no">
+    </iframe>
+<script>
+    var doc=document;  
+    var link=doc.createElement("link");  
+    link.setAttribute("rel", "icon");  
+    link.setAttribute("type", "image/x-icon");  
+    link.setAttribute("href", "http://ft.jd.com//html/favicon.ico");  
+    var heads = doc.getElementsByTagName("head");  
+    if(heads.length)  
+        heads[0].appendChild(link);  
+    else  
+        doc.documentElement.appendChild(link);  
+</script>
+
+    <div class="container">
+        <div class="logo">
+            <a href="/">
+                <img src="//img14.360buyimg.com/wympay/jfs/t3748/300/108123672/4451/c42d7358/57ff5e34N6e63c570.png" alt="京东金融企业服务平台">
+            </a>
+        </div>
+        <nav class="nav">
+            <ul>
+                <li class="{{underline-homepage}}">
+                    <a href="/portal/index.htm">首页</a>
+                </li>
+                <li class="product-intro {{underline-intro}}">
+                    <a href="/portal/product-intro.htm">产品介绍</a>
+                </li>
+                <li class="dropdown {{underline-sol}}">
+                    <a href="javascript:;">解决方案</a>
+                    <div class="sub-nav">
+                        <ul class="container">
+                            <li>
+                                <a data-icon="" href="/portal/finance-solution.htm">金融</a>
+                            </li>
+                            <li>
+                                <a data-icon="" href="/portal/education-solution.htm">教育</a>
+                            </li>
+                            <li>
+                                <a data-icon="" href="/portal/hr-solution.htm">HR服务平台</a>
+                            </li>
+                            <li>
+                                <a data-icon="" href="/portal/food-solution.htm">餐饮商超</a>
+                            </li>
+                            <li>
+                                <a data-icon="" href="/portal/fastgoods-solution.htm">快消品</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a id="abs" href="//ft.jdpay.com/account/auth?redirect=https%3A%2F%2Fft.jd.com%2Fabssp%2Fplan">ABS投资人平台</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header><input type='hidden' value='1493187942764' id='uniqueStamp' />
+<link rel="stylesheet" href="/portal/css/banner-detail-abs.css"/>
+<style type='text/css'>
+.counsel-content textarea{
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+    border-radius:10px;
+}
+</style>
+<div class="banner">
+    <div class="swiper-slide" style="background-image:url('//img20.360buyimg.com/wympay/jfs/t3868/358/1579195057/614639/66edc6de/587f4319N6746df79.png')">
+        <h2 class="title">大数据时代来临</h2>
+        <p class="desc">—— 京东稻田。数据产业联盟 ——</p>
+    </div>
+</div>
+<section class="section about-con" style="background:#fff">
+    <div class="container content">
+       <img src='//img11.360buyimg.com/wympay/jfs/t3298/298/5848076849/159289/a13ebb2a/587f44baN15e74df6.jpg'/>
+    </div>
+</section>
+<div class="counsel">
+    <div class="counsel-cover hide"></div>
+    <div id="counsel-container" class="counsel-container hide" style="position: absolute; top: 101px; left: 374px;">
+        <div class="counsel-form-con">
+            <h1>咨询合作</h1>
+            <a href="javascript:;" class="closebt">
+                <img src="/portal/img/counsel-close.png">
+            </a>
+            <div class="counsel-content">
+                <ul class="reg-bd">
+                    <li>
+                        <label for="company_name">公司</label>
+                        <div class="ui-input">
+                            <input autocomplete="off" type="text" class="i-text" id="company_name">
+                        </div>
+                    </li>
+                    <li>
+                        <label for="user_name">姓名</label>
+                        <div class="ui-input">
+                            <input autocomplete="off" type="text" class="i-text" id="user_name">
+                        </div>
+                    </li>
+                    <li>
+                        <label for="phone_number">手机号</label>
+                        <div class="ui-input">
+                            <input autocomplete="off" type="text" class="i-text" id="phone_number">
+                        </div>
+                    </li>
+                    <li>
+                        <label for="sms_code">短信验证码</label>
+                        <div class="ui-input">
+                            <input type="text" class="i-text" id="sms_code">
+                        </div>
+                        <span class="span-vercode">获取验证码</span>
+                    </li>
+                    <li class="error-code-li">
+                        <p class="error-code"></p>
+                    </li>
+                </ul>
+                <textarea placeholder="问题描述" name="name" rows="5" cols="36" id="problem_description"></textarea>
+                <p class="error"></p>
+                <button id="submit">提 交</button>
+            </div>
+        </div>
+        <div class="counsel-success hide">
+            <div class="counsel-success-in">
+                <a href="javascript:;" class="closebt closebt-success">
+                    <img src="/portal/img/counsel-close.png">
+                </a>
+                <img src="/portal/img/counsel-ok.png" alt="">
+                <h1>提交成功</h1>
+                <h2>专业售前人员会在1个工作日内与您联系，祝您工作顺利！</h2>
+            </div>
+        </div>
+        <div class="counsel-loading hide">
+            <div class="counsel-loading-in">
+                <h2>正在提交，请稍后...</h2>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section>
+    <div class="return-container">
+        <a href="javascript:;" class="consultation"></a>
+        <a href="javascript:;" class="returntop"></a>
+    </div>
+</section>
+
+<footer>
+    <div class="footer-hd" style="background: url('//img12.360buyimg.com/wympay/jfs/t3085/276/4096237471/15786/f2070898/57ff5d8eNb164bdfa.jpg') center no-repeat"></div>
+    <div class="footer">
+        <div class="container">
+            <p class="links">
+                <a href="http://www.jd.com" target="_blank">京东商城</a>｜
+                <a href="http://jr.jd.com" target="_blank">京东金融</a>｜
+                <a href="http://www.jcloud.com" target="_blank">京东云</a>｜
+                <a href="http://smart.jd.com" target="_blank">京东智能</a>｜
+                <a href="http://jzt.jd.com/gw/" target="_blank">京准通</a>｜
+                <a href="http://wxlink.jd.com" target="_blank">京东万象</a>｜
+                <a href="/html/about" target="_blank">关于我们</a>
+            </p>
+            <p class="copyright">Copyright © 2004-2016 京东JD.com 版权所有</p>
+        </div>
+    </div>
+    <script type="text/javascript" src="//tajs.qq.com/stats?sId=59053717" charset="UTF-8"></script>
+    <script type="text/javascript" src="//pingjs.qq.com/h5/stats.js" name="MTAH5" sid="500326688" cid="500332905" opts="{&quot;senseHash&quot;:false,&quot;autoReport&quot;:false,&quot;performanceMonitor&quot;:false}"></script>
+</footer><input type='hidden' value='1493187942777' id='uniqueStamp' />
+<script src="/portal/js/banner-detail.js"></script>
